@@ -1,9 +1,35 @@
 import { CompanyAccount } from './class/CompanyAccount'
+import { InvestorAccount } from './class/InvestorAccount'
 import { PeopleAccount } from './class/PeopleAccount'
 
+
+//People Accont
 const peopleAccount: PeopleAccount = new PeopleAccount(1, 'Nath', 10)
+
+peopleAccount.deposit(100)
+peopleAccount.withdraw(100)
+peopleAccount.getBalance()
+peopleAccount.getName()
+peopleAccount.setName('Leandro')
 console.log(peopleAccount)
-peopleAccount.deposit()
+
+
+//Company Account
 const companyAccount: CompanyAccount = new CompanyAccount('DIO', 20)
-companyAccount.deposit()
+companyAccount.deposit(200)
+companyAccount.withdraw(100)
+companyAccount.getBalance()
+companyAccount.getLoan(500)
+companyAccount.getName()
+companyAccount.setName('Brio')
+console.log(companyAccount)
+
+
+//investor Account
+const investorAccount: InvestorAccount = new InvestorAccount('rei', 20)
+investorAccount.deposit(200)
+investorAccount.withdraw(100)
+investorAccount.getBalance()
+investorAccount.getName()
+investorAccount.setName('Alfonso')
 console.log(companyAccount)
