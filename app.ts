@@ -10,7 +10,6 @@ peopleAccount.deposit(100)
 peopleAccount.withdraw(100)
 peopleAccount.getBalance()
 peopleAccount.getName()
-peopleAccount.setName('Leandro')
 console.log(peopleAccount)
 
 
@@ -21,7 +20,6 @@ companyAccount.withdraw(100)
 companyAccount.getBalance()
 companyAccount.getLoan(500)
 companyAccount.getName()
-companyAccount.setName('Brio')
 console.log(companyAccount)
 
 
@@ -31,5 +29,4 @@ investorAccount.deposit(200)
 investorAccount.withdraw(100)
 investorAccount.getBalance()
 investorAccount.getName()
-investorAccount.setName('Alfonso')
-console.log(companyAccount)
+console.log(investorAccount)
