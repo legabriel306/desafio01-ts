@@ -21,14 +21,9 @@ var InvestorAccount = /** @class */ (function (_super) {
     __extends(InvestorAccount, _super);
     function InvestorAccount(name, accountNumber) {
         var _this = _super.call(this, name, accountNumber) || this;
-        _this.deposit = function (value) {
-            if (_this.validateStatus()) {
-                _this.balance += value + 10;
-                console.log('Voce depositou');
-            }
-            else {
-                throw new Error('Não foi possível depositar nessa conta');
-            }
+        _this.investment = function (value) {
+            _this.deposit(value + 10);
+            console.log('Voce depositou');
         };
         return _this;
     }

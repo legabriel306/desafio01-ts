@@ -6,10 +6,6 @@ var DioAccount = /** @class */ (function () {
         var _this = this;
         this.balance = 0;
         this.status = true;
-        this.setName = function (name) {
-            _this.name = name;
-            console.log('Nome alterado com sucesso!');
-        };
         this.getName = function () {
             return _this.name;
         };

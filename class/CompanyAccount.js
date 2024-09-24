@@ -22,10 +22,8 @@ var CompanyAccount = /** @class */ (function (_super) {
     function CompanyAccount(name, accountNumber) {
         var _this = _super.call(this, name, accountNumber) || this;
         _this.getLoan = function (value) {
-            if (_this.status) {
-                _this.balance += value;
-                console.log('Voce pegou um empréstimo');
-            }
+            _this.deposit(value);
+            console.log('Voce pegou um empréstimo');
         };
         return _this;
     }
